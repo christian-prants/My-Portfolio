@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+import './index.css';
+
+initializeApp({
+  apiKey: "AIzaSyBSFMIUsiYNR_gaJlmXVB-FhybCYr_AufY",
+  authDomain: "teste-3ec37.firebaseapp.com",
+  databaseURL: "https://teste-3ec37-default-rtdb.firebaseio.com",
+  projectId: "teste-3ec37",
+  storageBucket: "teste-3ec37.appspot.com",
+  messagingSenderId: "29336795145",
+  appId: "1:29336795145:web:ee30d322047abb1ca060d8"
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
